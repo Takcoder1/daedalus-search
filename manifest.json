@@ -1,0 +1,20 @@
+{
+  "name": "Daedalus Search",
+  "short_name": "Daedalus",
+  "start_url": "findify.html",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#007BFF",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
