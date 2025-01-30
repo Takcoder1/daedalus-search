@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daedalus Search</title>
+
+    <script async src="https://cse.google.com/cse.js?cx=359efd5c28b6b47c6"></script>
+
+    <link rel="manifest" href="manifest.json">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('background.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(34, 34, 34, 0.8);
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: white;
+            color: #222;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .navbar button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 100px;
+            width: 80%;
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: gold;
+            margin-bottom: 10px;
+        }
+
+        .slogan {
+            font-size: 20px;
+            font-style: italic;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .gcse-searchbox,
+        .gcse-searchresults {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        .logo {
+            width: 120px;
+            margin-bottom: 10px;
+            filter: drop-shadow(2px 2px 10px rgba(255, 255, 0, 0.6));
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <button onclick="goHome()">🏠 Home</button>
+    </div>
+
+    <div class="container">
+        <img src="logo.png" alt="Daedalus Logo" class="logo">
+        <h1>Daedalus</h1>
+        <p class="slogan">"Find every corner of the internet labyrinth."</p>
+
+        <div class="gcse-searchbox"></div>
+        <div class="gcse-searchresults"></div>
+    </div>
+
+    <script>
+        function goHome() {
+            window.location.href = "findify.html";
+        }
+    </script>
+
+</body>
+</html>
